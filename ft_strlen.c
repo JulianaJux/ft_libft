@@ -6,21 +6,21 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:07:15 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/07/19 19:12:03 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/13 10:52:05 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strlen(const char *s)
+int	ft_strlen(const char *s)
 {
-    int j;
+	int	j;
 
-    j = 0;
-    while (*s != '\0')
-    {
-        j++;
-        s++;
-    }
-    return (j);
+	j = 0;
+	while (*s != '\0')
+	{
+		j++;
+		s++;
+	}
+	return (j);
 }
