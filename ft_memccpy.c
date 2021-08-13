@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/18 20:22:14 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 11:02:01 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/13 11:17:30 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,14 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	char	*s;
 
 	j = 0;
-	d = (char*)dst;
-	s = (char*)src;
-
+	d = (char*) dst;
+	s = (char*) src;
 	while (j < n)
 	{
 		d[j] = s[j];
 		if (s[j] == ((unsigned char)c))
 		return (dst + j + 1);
-		j++;
+			j++;
 	}
 	return (NULL);
 }

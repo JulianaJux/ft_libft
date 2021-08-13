@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:31:53 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 11:11:20 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/13 11:19:52 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 		return (0);
 	}
 	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < n - 1)
-	i++;
+			i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }

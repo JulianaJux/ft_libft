@@ -6,12 +6,12 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:03:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 11:00:22 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/13 11:15:53 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
 # include <stddef.h>
 
