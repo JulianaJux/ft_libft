@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/19 18:38:20 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 11:20:36 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/13 11:25:31 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		while (n--)
 		{
 			d[n] = s[n];
-	}
 		}
+	}
 	else
-	ft_memcpy(d, s, n);
-		return (d);
+		ft_memcpy(d, s, n);
+	return (d);
 }
