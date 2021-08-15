@@ -6,7 +6,7 @@
 #    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/08/15 17:38:08 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/08/15 17:51:19 by julianaalen      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ ft_strlcpy.c \
 ft_strlcat.c \
 ft_toupper.c \
 ft_tolower.c \
+ft_strchr.c \
 
 OBJECTS = $(FILES:.c=.o)
 RM = rm -f

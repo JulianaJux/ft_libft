@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 16:08:32 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 16:13:41 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 17:50:33 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isascii(int c)
 {
-	if (c < 0 || c > 127)
+	if (c < 0 || c > 177)
 		return (0);
 	else
 		return (1);
