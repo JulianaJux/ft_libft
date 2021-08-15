@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:48:18 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 16:18:55 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:24:37 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_isprint(int c)
 {
-		if ((c < 32) || (c > 126))
-			return (0);
-		else
-			return (1);
+	if ((c < 32) || (c > 126))
+		return (0);
+	else
+		return (1);
 }

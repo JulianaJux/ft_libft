@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 15:59:46 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 16:06:12 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:29:14 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_isalnum(int c)
 {
-	if ((c < 'A') || (c > 'Z' && c < 'a') || (c > 'z') || (c < '0') || (c > '9'))
-		return (0);
-	else
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
+	else
+		return (0);
 }

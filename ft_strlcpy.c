@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 16:33:29 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 19:02:37 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:23:23 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t srcsize;
-	size_t j;
+	size_t	srcsize;
+	size_t	j;
 
 	if (!src || !dst)
-			return (0);
+		return (0);
 	srcsize = ft_strlen(src);
 	j = 0;
 	if (dstsize != 0)

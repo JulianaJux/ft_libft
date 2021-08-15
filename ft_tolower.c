@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:51:37 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 17:46:58 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:27:49 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-		if ((c >= 'A') && (c <= 'Z'))
-			c = c + 32;
+	if ((c >= 'A') && (c <= 'Z'))
+		c = c + 32;
 	return (c);
 }

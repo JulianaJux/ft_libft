@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:44:17 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 15:58:26 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:22:47 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_isdigit(int c)
 {
-		if ((c < '0') || (c > '9'))
-			return (0);
-		else
-			return (1);
+	if ((c < '0') || (c > '9'))
+		return (0);
+	else
+		return (1);
 }

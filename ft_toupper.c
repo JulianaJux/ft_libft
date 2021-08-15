@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:51:42 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 17:44:02 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:25:01 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int	ft_toupper(int c)
 {
-		if ((c >= 'a') && (c <= 'z'))
-			c = c - 32;
-
+	if ((c >= 'a') && (c <= 'z'))
+		c = c - 32;
 	return (c);
 }
