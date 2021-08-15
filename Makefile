@@ -6,7 +6,7 @@
 #    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/08/15 16:30:58 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/08/15 17:38:08 by julianaalen      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,8 @@ ft_isdigit.c \
 ft_isalnum.c \
 ft_isascii.c \
 ft_isprint.c \
+ft_strlcpy.c \
+ft_strlcat.c \
 ft_toupper.c \
 ft_tolower.c \
 
