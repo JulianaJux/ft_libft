@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:03:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 17:32:17 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 17:48:04 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-char	*ft_tolower(char *str);
-char	*ft_toupper(char *str);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 int		ft_atoi(const char *str);
 
 #endif
