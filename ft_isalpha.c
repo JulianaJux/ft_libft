@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 11:27:58 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 15:49:39 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 15:58:23 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 int	ft_isalpha(int c)
 {
-	{
-		if ((c < 'A') || (c > 'Z' && c < 'a') || (c > 'z'))
-			return (0);
-	}
-	return (1);
+	if ((c < 'A') || (c > 'Z' && c < 'a') || (c > 'z'))
+		return (0);
+	else
+		return (1);
 }
