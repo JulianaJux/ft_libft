@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:03:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 16:00:43 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 16:19:13 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ int		ft_strncmp(char *s1, char *s2, unsigned int n);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
-int		ft_isprint(char *str);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
 char	*ft_tolower(char *str);
 char	*ft_toupper(char *str);
 int		ft_atoi(const char *str);
