@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:39:41 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 19:37:56 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:48:26 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	size_t	total;
-	void	*dst;
+	void	*ptr;
 
-	total = size * count;
-	if (!(dst = malloc(total)))
-		return(0);
-	ft_memset(dst, 0, total);
-	return (dst);
+	ptr = (void *)malloc(count * size);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, count);
+	return (ptr);
 }
