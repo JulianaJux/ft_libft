@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:03:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 18:53:15 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:14:19 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include <stdlib.h>
 
 /*primeira parte mandatória*/
 void	*ft_memset(void *b, int c, size_t len);
