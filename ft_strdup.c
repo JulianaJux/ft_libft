@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:53:26 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 18:58:48 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:01:55 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strdup(const char *s1)
 	while (s1[j])
 	{
 		str[j] = s1[j];
-		j++
+		j++;
 	}
 	str[j] = '\0';
 	return (str);

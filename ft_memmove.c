@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/19 18:38:20 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 11:25:31 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:11:08 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,27 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*d;
-	char	*s;
+	unsigned char	*d;
+	unsigned char	*s;
+	size_t			j;
 
+	j = 0;
 	d = (char *)dst;
 	s = (char *)src;
-	if (s < d)
+	if (d == s)
+		return (d);
+	if ((s < d) && ((s + len) > d))
+		while (j++ < n)
+			d[len - j] = s[len - j];
+	else if ((s > d) && ((d + len) > s))
 	{
-		while (n--)
+		while (j < len)
 		{
-			d[n] = s[n];
+			d[j] = s[j];
+			j++;
 		}
 	}
 	else
-		ft_memcpy(d, s, n);
+		ft_memcpy(d, s, len);
 	return (d);
 }

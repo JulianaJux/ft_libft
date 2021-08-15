@@ -6,13 +6,13 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:39:41 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 18:47:57 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 19:02:27 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size);
+void	*ft_calloc(size_t count, size_t size)
 {
 	size_t	total;
 	void	*dst;
