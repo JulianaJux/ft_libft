@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:01:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 21:08:43 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 21:10:18 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)(s + j));
 		j--:
 		}
-	return (NULL);
+		return (NULL);
 	}
