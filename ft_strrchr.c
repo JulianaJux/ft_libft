@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 18:01:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 21:12:57 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/08/15 21:13:58 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ char	*ft_strrchr(const char *s, int c)
 		if (s[j] == (char)c)
 			return ((char *)(s + j));
 		j--;
-		}
-			return (NULL);
 	}
+		return (NULL);
+}
