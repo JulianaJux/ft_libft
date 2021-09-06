@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 21:38:13 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/05 16:04:23 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/06 12:08:37 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,4 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-
 }

@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:15:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/05 16:05:52 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/06 12:08:16 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	j;
 	char	*str;
 
-	str = (char*)malloc(sizeof(*s) * (len + 1));
+	str = (char *)malloc(sizeof(*s) * (len + 1));
 	if (!str)
 		return (NULL);
 	t = 0;
