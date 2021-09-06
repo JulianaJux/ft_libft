@@ -6,7 +6,7 @@
 #    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/09/06 15:11:42 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/09/06 15:49:55 by julianaalen      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,8 +41,6 @@ ft_calloc.c \
 ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
-ft_strtrim.c\
-ft_split.c\
 ft_itoa.c\
 ft_strmapi.c\
 ft_striteri.c\
