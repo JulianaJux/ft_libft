@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:15:55 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/06 12:36:58 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/06 12:39:58 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ static	int	ft_len(long nb)
 }
 
 char	*ft_itoa(int n)
-
 {
 	char	*res;
 	long	t;
