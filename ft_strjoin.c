@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:37:20 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/18 13:47:16 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/05 16:05:32 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	while (s2[t])
 	{
 		str[j++] = s2[t];
-		t++
+		t++; 
 	}
 	str[j] = '\0';
 	return (str);

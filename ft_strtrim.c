@@ -1,37 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/18 09:15:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/05 16:05:52 by julianaalen      ###   ########.fr       */
+/*   Created: 2021/08/18 21:38:13 by julianaalen       #+#    #+#             */
+/*   Updated: 2021/09/05 16:04:23 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	t;
-	size_t	j;
-	char	*str;
 
-	str = (char*)malloc(sizeof(*s) * (len + 1));
-	if (!str)
-		return (NULL);
-	t = 0;
-	j = 0;
-	while (s[t])
-	{
-		if (t >= start && j < len)
-		{
-			str[j] = s[t];
-			j++;
-		}
-		t++;
-	}
-	str[j] = '\0';
-	return (str);
 }
