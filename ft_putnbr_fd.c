@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 15:00:06 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/06 15:08:25 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/06 15:19:12 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int j;
+	unsigned int	j;
 
 	if (n < 0)
 	{

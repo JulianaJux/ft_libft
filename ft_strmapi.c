@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 12:57:47 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/06 14:06:25 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/06 15:20:48 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	j;
 	char			*str;
 
-	if(!s)
+	if (!s)
 		return (NULL);
 	str = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!(str))
