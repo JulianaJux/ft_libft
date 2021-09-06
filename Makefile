@@ -6,7 +6,7 @@
 #    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/09/05 16:04:28 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/09/06 12:31:54 by julianaalen      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,8 @@ ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
 ft_strtrim.c\
+ft_split.c\
+ft_itoa.c\
 
 OBJECTS = $(FILES:.c=.o)
 RM = rm -f

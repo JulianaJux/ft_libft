@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:15:55 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/06 11:25:00 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/06 12:36:58 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,10 @@ char	*ft_itoa(int n)
 
 	t = n;
 	j = ft_len(n);
-	if (!(res = (char *)malloc(sizeof(char) * (j + 1))))
-		return (NULL);
+	res = (char *)malloc(sizeof(char) * (j + 1));
 	res[j--] = '\0';
+	if (! res)
+		return (NULL);
 	if (n == 0)
 	{
 		res[0] = 48;
