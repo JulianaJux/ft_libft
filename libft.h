@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:03:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 19:01:41 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/12 19:03:39 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}
-t_list;
+} t_list;
 
 /*primeira parte mandatória*/
 void	*ft_memset(void *b, int c, size_t len);
