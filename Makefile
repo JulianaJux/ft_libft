@@ -6,14 +6,13 @@
 #    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/09/06 15:49:55 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/09/12 17:16:33 by julianaalen      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-
 
 FILES = ft_memset.c \
 ft_bzero.c \
@@ -41,6 +40,8 @@ ft_calloc.c \
 ft_strdup.c \
 ft_substr.c \
 ft_strjoin.c \
+ft_strtrim.c \
+ft_split.c \
 ft_itoa.c\
 ft_strmapi.c\
 ft_striteri.c\
@@ -49,7 +50,18 @@ ft_putstr_fd.c\
 ft_putendl_fd.c\
 ft_putnbr_fd.c\
 
+FILES_B = ft_lstnew.c \
+ft_lstadd_front.c \
+ft_lstsize.c \
+ft_lstadd_back.c \
+ft_lstlast.c \
+ft_lstdelone.c \
+ft_lstiter.c \
+ft_lstclear.c \
+ft_lstmap.c \
+
 OBJECTS = $(FILES:.c=.o)
+OBJECTS_B = $(FILES_B: .c=.o)
 RM = rm -f
 AR	= ar rcs
 
@@ -69,4 +81,7 @@ fclean: clean
 
 re: fclean all 
 
-.PHONY: all clean fclean re 
+bonus: $(OBJECTS) $(OBJECTS_B)
+	 $(AR) $(NAME) $(OBJECTS) $(OBJECTS_B)
+
+.PHONY: all clean fclean re bonus
