@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/12 17:53:20 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 18:38:12 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/12 18:56:34 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *dst;
-	t_list *first;
+	t_list	*dst;
+	t_list	*first;
 
 	if (!lst || !f || !del)
 		return (NULL);
@@ -24,16 +24,16 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	first = dst;
 	while (lst)
 	{
-			if (lst->next)
+		if (lst->next)
+		{
+			if (!(dst->next = ft_lstnew(f(lst->next->content))))
 			{
-				if (!(dst->next = ft_lstnew(f(lst->next->content))))
-				{
-					ft_lstclear(&first, del);
+				ft_lstclear(&first, del);
 					return (0);
-				}
-				dst = dst->next;
 			}
-			lst = lst->next;
+			dst = dst->next;
+		}
+		lst = lst->next;
 	}
 	dst->next = NULL;
 	return (first);

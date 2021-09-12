@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 21:38:13 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 17:39:13 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/12 18:58:43 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	fim = ft_strlen(s1 + ini);
 	if (fim)
 		while (s1[fim + ini - 1] != 0 && ft_strchr(set, s1[fim + ini - 1]) != 0)
-		fim--;
+			fim--;
 	if (!(str = malloc(sizeof(char) * fim + 1)))
 		return (NULL);
 	ft_strlcpy(str, s1 + ini, fim);

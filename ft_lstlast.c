@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/12 17:53:17 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 17:59:18 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/12 18:50:49 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	if(!lst)
+	if (!lst)
 		return (0);
 	while (lst->next)
 		lst = lst->next;
-		return (lst);
+	return (lst);
 }
