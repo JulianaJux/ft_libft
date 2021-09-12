@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 16:43:08 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/12 17:23:27 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ char	**ft_split(char const *s, char c)
 
 	j = 0;
 	t = 0;
-	if (!s || (!spl = (char **)malloc(sizeof(char *) * (ft_word(s, c) + 1))))
+	if (!s || !(spl = (char **)malloc(sizeof(char *) * (ft_word(s, c) + 1))))
 		return (NULL);
 	while (*s)
 	{
@@ -78,12 +78,12 @@ char	**ft_split(char const *s, char c)
 			s++;
 		if (*s != c && *s)
 		{
-			if (!spl[j] = (char *)malloc(sizeof(char) * (ft_len(s, c) + 1)))
+			if (!(spl[j] = (char *)malloc(sizeof(char) * (ft_len(s, c) + 1))))
 				return (ft_control_malloc(spl));
 			while (*s != c && *s)	
 				spl[j][t++] = (char)*s++;
 			spl[j][t] = '\0';
-			j++
+			j++;
 			t = 0;
 		}
 	}

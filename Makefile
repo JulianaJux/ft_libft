@@ -6,7 +6,7 @@
 #    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/09/12 17:16:33 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/09/12 18:37:22 by julianaalen      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,15 +53,15 @@ ft_putnbr_fd.c\
 FILES_B = ft_lstnew.c \
 ft_lstadd_front.c \
 ft_lstsize.c \
-ft_lstadd_back.c \
 ft_lstlast.c \
+ft_lstadd_back.c \
 ft_lstdelone.c \
-ft_lstiter.c \
 ft_lstclear.c \
+ft_lstiter.c \
 ft_lstmap.c \
 
 OBJECTS = $(FILES:.c=.o)
-OBJECTS_B = $(FILES_B: .c=.o)
+OBJECTS_B = $(FILES_B:.c=.o)
 RM = rm -f
 AR	= ar rcs
 
@@ -74,7 +74,7 @@ $(OBJECTS): $(FILES)
 	$(CC) $(FLAGS) -c $(FILES)
 
 clean:
-	$(RM) $(OBJECTS) 
+	$(RM) $(OBJECTS) $(OBJECTS_B)
 
 fclean: clean
 	$(RM) $(NAME)
