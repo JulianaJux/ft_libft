@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 21:38:13 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 16:23:45 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 18:16:18 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	const char	*tmp;
 	char		*new_str;
 	size_t		len;
 	size_t		cp_len;
 
-	if (!s1)
-		return (NULL);
-	tmp = s1;
-	while (*tmp && (*tmp == ' ' || *tmp == '\t' || *tmp == '\n'))
-		tmp++;
-	len = ft_strlen(tmp);
-	cp_len = len;
-	while ((tmp[len - 1] == ' ' || tmp[len - 1] == '\t' || tmp[len - 1] == '\n')
-		&& len >= 1)
-		len--;
-	if (len == cp_len)
-		return (ft_strdup(tmp));
-	new_str = (char *)malloc(sizeof(char) * (len + 1));
-	if (!(new_str))
-		return (NULL);
-	ft_strlcpy(new_str, tmp, len);
-	new_str[len] = '\0';
+	if (s1 == 0 || set == 0)
+		return (0);
+	if (*s1 == 0)
+	{
+		new_str = (char *)ft_calloc(1, sizeof(char));
+		if (new_str == 0)
+			return (0);
+		return (new_str);
+	}
+	while (*s1 != 0 && (ft_strchr(set, *s)))
+		s1++;
+	cp_len = ft_strlen(s1);
+	while (cp_len > 0 && (ft_strchr(set, s1[cp_len])))
+		cp_len--;
+	len = cp_len + 1;
+	new_str = ft_substr(s1, 0 len);
+	if (new_str == 0)
+		return (0);
 	return (new_str);
 }
