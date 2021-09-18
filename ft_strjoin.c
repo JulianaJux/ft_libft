@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:37:20 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 17:41:59 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 17:44:15 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (s1 == 0 || s2 == 0)
 		return (0);
-	str = (char *)malloc(sizeof(*char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!str)
 		return (NULL);
 	ostr = str + ft_strlen(s1);
