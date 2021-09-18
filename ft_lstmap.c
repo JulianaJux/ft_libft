@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/12 17:53:20 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 19:14:16 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 19:15:08 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			ft_lstadd_back(&res, p);
 			lst = lst->next
 			}
-		}
+			}
 	return (res);
 		}
