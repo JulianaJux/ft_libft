@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 18:51:37 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 18:54:09 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@ static	int	ft_word(const char *s, char c)
 	word = 0;
 	while (*s != 0)
 	{
-		while(*s == c && *s != 0)
-		s++;
+		while (*s == c && *s != 0)
+			s++;
 		if (*s != c && *s != 0)
 		{
 			word++;
 			while (*s != c && *s != 0)
-			s++;
+				s++;
 		}
-	return (word);
+		return (word);
 }
 
 static char	**ft_control_malloc(char **tab)
