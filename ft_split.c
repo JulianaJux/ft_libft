@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 16:23:47 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 18:51:37 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,21 @@
 
 static	int	ft_word(const char *s, char c)
 {
-	int	word;
+	size_t	word;
 
+	if (s == 0)
+		return (0);
 	word = 0;
-	if (*s != c && *s)
+	while (*s != 0)
 	{
+		while(*s == c && *s != 0)
 		s++;
-		word++;
-	}
-	while (*s)
-	{
-		while (*s == c)
+		if (*s != c && *s != 0)
 		{
+			word++;
+			while (*s != c && *s != 0)
 			s++;
-			if (*s != c && *s)
-				word++;
 		}
-		s++;
-	}
 	return (word);
 }
 
@@ -54,7 +51,7 @@ static	int	ft_len(const char *s, char c)
 	size_t	count;
 
 	count = 0;
-	while (*s != c && *s)
+	while (*s != c && *s != 0)
 	{
 		count++;
 		s++;
@@ -62,31 +59,39 @@ static	int	ft_len(const char *s, char c)
 	return (count);
 }
 
+static char	**ft_alloc(char **spl, const char *s, size_t w)
+{
+	size_t	len;
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	j = 0;
+	while (s[i] != 0 && j < w)
+	{
+		if (s[i] != c)
+		{
+			len = ft_len(&s[i], c);
+			spl[j] = ft_substr(s, i, len)
+			if(!spl[j])
+				return (ft_control_malloc(spl));
+			j++;
+			i += len -1;
+		}
+		i++;
+	}
+	spl[j] = 0;
+	return (spl);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	int		j;
-	int		t;
 	char	**spl;
+	size_t	wc;
 
-	j = 0;
-	t = 0;
-	spl = (char **)malloc(sizeof(char *) * (ft_word(s, c) + 1));
+	wc = ft_word(s, c);
+	spl = (char **)malloc(wc + 1) * sizeof(char *));
 	if (!(s || spl))
 		return (NULL);
-	while (*s)
-	{
-		while (*s == c && *s)
-			s++;
-		if (*s != c && *s)
-		{
-			spl[j] = (char *)malloc(sizeof(char) * (ft_len(s, c) + 1));
-			if (!(spl[j]))
-				return (ft_control_malloc(spl));
-			while (*s != c && *s)
-				spl[j][t++] = (char)*s++;
-			spl[j][t] = '\0';
-			j++;
-		}
-	}
-	return (spl);
+	return (ft_alloc(spl, s, c, wc));
 }
