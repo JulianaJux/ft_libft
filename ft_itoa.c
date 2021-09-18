@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:15:55 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 17:15:50 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 17:18:51 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static	size_t	ft_len(int nb)
 	}
 	else
 		n = nb;
-	while (n /10)
+	while (n / 10)
 	{
 		j++;
 		n = n / 10;
