@@ -6,13 +6,13 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:15:55 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 16:51:54 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 16:54:19 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	ft_len(long nb)
+static	int	ft_len(long long nb)
 {
 	int	len;
 
@@ -29,7 +29,7 @@ static	int	ft_len(long nb)
 char	*ft_itoa(int n)
 {
 	char	*res;
-	long	t;
+	long long	t;
 	int		j;
 
 	j = 0;
