@@ -6,49 +6,65 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:15:55 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 16:59:12 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 17:15:50 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	ft_len(long long nb)
+static	size_t	ft_len(int nb)
 {
-	int	len;
+	size_t	j;
+	int		n;
 
-	len = 0;
-	while (nb != 0)
+	j = 0;
+	if (nb < 0)
 	{
-		nb /= 10;
-		len++;
+		j++;
+		n = nb * -1;
 	}
-	len ++;
-	return (len);
+	else
+		n = nb;
+	while (n /10)
+	{
+		j++;
+		n = n / 10;
+	}
+	j++;
+	return (j);
+}
+
+static int	ft_pos(int nb)
+{
+	if (nb < 0)
+		return (0);
+	return (1);
 }
 
 char	*ft_itoa(int n)
 {
-	char		*res;
-	long long	t;
-	int			j;
+	char			*res;
+	unsigned int	t;
+	size_t			j;
 
-	j = 0;
-	if (n < 0)
-		j++;
-	t = n;
-	if (t < 0)
-		t = -t;
-	j = ft_len(t);
-	res = (char *)malloc(sizeof(char) * (j + 1));
+	res = (char *)malloc(ft_len(n) + 1);
 	if (!(res))
 		return (NULL);
-	res[j] = '\0';
-	while (j-- > 0)
+	j = 0;
+	if (n < 0)
 	{
-		res[j] = (t % 10 + '0');
-		t = t / 10;
+		res[j] = '-';
+		j++;
+		t = -n;
 	}
-	if ((res[0] == '0') && (res[1] != '\0'))
-		res[0] = '-';
+	else
+		t = n;
+	res[ft_len(n)] = '\0';
+	while (j < ft_len(n))
+	{
+		res[ft_len(n) - j - ft_pos(n)] = (t % 10) + 48;
+		t = t / 10;
+		j++;
+	}
 	return (res);
 }
