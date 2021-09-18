@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 18:58:19 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 15:42:01 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,8 @@ char	**ft_split(char const *s, char c)
 
 	j = 0;
 	t = 0;
-	if (!s || !(spl = (char **)malloc(sizeof(char *) * (ft_word(s, c) + 1))))
+	spl = (char **)malloc(sizeof(char *) * (ft_word(s, c) + 1)) 
+	if (!(s || spl)
 		return (NULL);
 	while (*s)
 	{
