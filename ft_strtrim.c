@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 21:38:13 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 15:35:46 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 15:36:53 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = ft_strlen(tmp);
 	cp_len = len;
 	while ((tmp[len - 1] == ' ' || tmp[len - 1] == '\t' || tmp[len - 1] == '\n')
-				&& len >= 1)
+			&& len >= 1)
 		len--;
 	if (len == cp_len)
 		return (ft_strdup(tmp));
