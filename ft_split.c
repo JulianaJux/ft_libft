@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 18:55:46 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 18:56:52 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,10 +74,10 @@ static char	**ft_alloc(char **spl, const char *s, size_t w)
 		{
 			len = ft_len(&s[i], c);
 			spl[j] = ft_substr(s, i, len)
-			if(!spl[j])
+				if (!spl[j])
 				return (ft_control_malloc(spl));
 			j++;
-			i += len -1;
+			i += len - 1;
 		}
 		i++;
 	}
