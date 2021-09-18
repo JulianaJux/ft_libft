@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 21:38:13 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 15:37:52 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 16:21:39 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		len--;
 	if (len == cp_len)
 		return (ft_strdup(tmp));
-	new_str = (char *)malloc(sizeof(char) * (len + 1))
+	new_str = (char *)malloc(sizeof(char) * (len + 1));
 		if (!(new_str))
 		return (NULL);
-	ft_strncpy(new_str, tmp, len);
+	ft_strlcpy(new_str, tmp, len);
 	new_str[len] = '\0';
 	return (new_str);
 }
