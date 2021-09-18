@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:15:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/06 12:08:16 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 20:05:05 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,27 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	t;
-	size_t	j;
-	char	*str;
+	char	*sub;
+	char	*st;
 
-	str = (char *)malloc(sizeof(*s) * (len + 1));
-	if (!str)
-		return (NULL);
-	t = 0;
-	j = 0;
-	while (s[t])
+	if (s == 0)
+		return (0);
+	st = (char *)s + start;
+	if (start > ft_strlen(s) || len == 0)
 	{
-		if (t >= start && j < len)
-		{
-			str[j] = s[t];
-			j++;
-		}
-		t++;
+		sub = (char *)ft_calloc(1, sizeof(char));
+		return (sub);
 	}
-	str[j] = '\0';
-	return (str);
+	if (len > (ft_strlen(s) + 1))
+		sub = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
+	else
+		sub = (char *)malloc(sizeof(char) * len + 1);
+	if (sub == 0)
+		return (0);
+	if (len > (ft_strlen(s) + 1))
+		ft_memcpy(sub, st, ft_strlen(s) + 1);
+	else
+		ft_memcpy(sub, st, len);
+	sub[len] = 0;
+	return (sub);
 }
