@@ -6,7 +6,7 @@
 #    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/09/12 18:38:16 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/09/18 17:22:04 by julianaalen      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,7 @@ $(OBJECTS): $(FILES)
 	$(CC) $(FLAGS) -c $(FILES)
 
 clean:
-	$(RM) $(OBJECTS) 
+	$(RM) $(OBJECTS) $(OBJECTS_B) 
 
 fclean: clean
 	$(RM) $(NAME)
