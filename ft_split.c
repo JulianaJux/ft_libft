@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 16:09:32 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 16:16:51 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,5 @@ char	**ft_split(char const *s, char c)
 			j++;
 		}
 	}
-	spl[j] = NULL;
 	return (spl);
 }
