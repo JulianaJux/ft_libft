@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 15:42:01 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 16:03:33 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static char	**ft_control_malloc(char **tab)
 
 static	int	ft_len(const char *s, char c)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	while (*s != c && *s)
@@ -85,7 +85,6 @@ char	**ft_split(char const *s, char c)
 				spl[j][t++] = (char)*s++;
 			spl[j][t] = '\0';
 			j++;
-			t = 0;
 		}
 	}
 	spl[j] = NULL;
