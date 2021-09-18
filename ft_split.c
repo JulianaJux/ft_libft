@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 19:03:08 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 19:04:55 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ static	int	ft_word(const char *s, char c)
 	}
 	return (word);
 }
-
 
 static char	**ft_control_malloc(char **tab)
 {
@@ -76,7 +75,7 @@ static char	**ft_alloc(char **spl, const char *s, char c, size_t w)
 			len = ft_len(&s[i], c);
 			spl[j] = ft_substr(s, i, len);
 				if (!spl[j])
-				return (ft_control_malloc(spl));
+			return (ft_control_malloc(spl));
 			j++;
 			i += len - 1;
 		}
