@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 18:56:52 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 19:03:08 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,10 @@ static	int	ft_word(const char *s, char c)
 			while (*s != c && *s != 0)
 				s++;
 		}
-		return (word);
 	}
+	return (word);
 }
+
 
 static char	**ft_control_malloc(char **tab)
 {
@@ -60,7 +61,7 @@ static	int	ft_len(const char *s, char c)
 	return (count);
 }
 
-static char	**ft_alloc(char **spl, const char *s, size_t w)
+static char	**ft_alloc(char **spl, const char *s, char c, size_t w)
 {
 	size_t	len;
 	size_t	i;
@@ -73,7 +74,7 @@ static char	**ft_alloc(char **spl, const char *s, size_t w)
 		if (s[i] != c)
 		{
 			len = ft_len(&s[i], c);
-			spl[j] = ft_substr(s, i, len)
+			spl[j] = ft_substr(s, i, len);
 				if (!spl[j])
 				return (ft_control_malloc(spl));
 			j++;
@@ -91,7 +92,7 @@ char	**ft_split(char const *s, char c)
 	size_t	wc;
 
 	wc = ft_word(s, c);
-	spl = (char **)malloc(wc + 1) * sizeof(char *));
+	spl = (char **)malloc((wc + 1) * sizeof(char *));
 	if (!(s || spl))
 		return (NULL);
 	return (ft_alloc(spl, s, c, wc));
