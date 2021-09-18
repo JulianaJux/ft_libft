@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 18:54:09 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 18:55:46 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ static	int	ft_word(const char *s, char c)
 				s++;
 		}
 		return (word);
+	}
 }
 
 static char	**ft_control_malloc(char **tab)
