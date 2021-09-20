@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/18 18:13:38 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 11:19:30 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/18 22:22:00 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	char	*j;
+	char	*j; 
 
 	j = (char *)b;
 	while (len > 0)
