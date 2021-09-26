@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:07:15 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 10:52:05 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 23:41:10 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strlen(const char *s)
 {
-	int	j;
+	unsigned int	j;
 
 	j = 0;
 	while (*s != '\0')
