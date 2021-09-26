@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:15:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/25 23:13:38 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 23:47:46 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,20 @@ static size_t	ft_longlen(const char *s)
 	return (n);
 }
 
+static unsigned int	ft_cmplen(const char *s)
+{
+	unsigned int	n;
+
+	n = 0;
+	while (*s != '\0')
+	{
+		n++;
+		s++;
+	}
+	return (n);
+}
+
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
@@ -33,7 +47,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (s == 0)
 		return (0);
 	st = (char *)s + start;
-	if (start > ft_strlen(s) || len == 0)
+	if (start > ft_cmplen(s) || len == 0)
 	{
 		sub = (char *)ft_calloc(1, sizeof(char));
 		return (sub);
