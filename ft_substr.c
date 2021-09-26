@@ -6,11 +6,24 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:15:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 20:05:05 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 18:37:37 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static	ft_longlen(const char *s);
+{
+	size_t	i;
+
+	i = 0;
+	while (*s != '\0') 
+	{
+		i++; 
+		s++; 
+	}
+	return (i);
+}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -25,13 +38,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		sub = (char *)ft_calloc(1, sizeof(char));
 		return (sub);
 	}
-	if (len > (ft_strlen(s) + 1))
+	if (len > (ft_longlen(s) + 1))
 		sub = (char *)malloc(sizeof(char) * ft_strlen(s) + 1);
 	else
 		sub = (char *)malloc(sizeof(char) * len + 1);
 	if (sub == 0)
 		return (0);
-	if (len > (ft_strlen(s) + 1))
+	if (len > (ft_longlen(s) + 1))
 		ft_memcpy(sub, st, ft_strlen(s) + 1);
 	else
 		ft_memcpy(sub, st, len);

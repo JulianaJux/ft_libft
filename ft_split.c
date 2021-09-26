@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 10:13:27 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 19:05:51 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 20:41:24 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,19 @@ static	int	ft_word(const char *s, char c)
 	return (word);
 }
 
+static	int	ft_len(const char *s, char c)
+{
+	size_t	count;
+
+	count = 0;
+	while (*s != c && *s != 0)
+	{
+		count++;
+		s++;
+	}
+	return (count);
+}
+
 static char	**ft_control_malloc(char **tab)
 {
 	size_t	j;
@@ -45,19 +58,6 @@ static char	**ft_control_malloc(char **tab)
 	}
 	free(tab);
 	return (NULL);
-}
-
-static	int	ft_len(const char *s, char c)
-{
-	size_t	count;
-
-	count = 0;
-	while (*s != c && *s != 0)
-	{
-		count++;
-		s++;
-	}
-	return (count);
 }
 
 static char	**ft_alloc(char **spl, const char *s, char c, size_t w)

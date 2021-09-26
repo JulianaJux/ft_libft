@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 11:41:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 21:08:50 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 15:57:35 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ int	ft_atoi(const char *str)
 	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
-			sign = -1;
+			sign = sign * -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		res = (str[i] - '0') + (res * 10);
+		res = (res * 10) + (str[i] - '0');
 		i++;
 	}
 	return (res * sign);

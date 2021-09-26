@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 21:38:13 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 18:18:22 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 19:44:05 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t		cp_len;
 
 	if (s1 == 0 || set == 0)
-		return (0);
+		return (NULL);
 	if (*s1 == 0)
 	{
 		new_str = (char *)ft_calloc(1, sizeof(char));
 		if (new_str == 0)
-			return (0);
+			return (NULL);
 		return (new_str);
 	}
 	while (*s1 != 0 && (ft_strchr(set, *s1)))
@@ -35,6 +35,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = cp_len + 1;
 	new_str = ft_substr(s1, 0, len);
 	if (new_str == 0)
-		return (0);
+		return (NULL);
 	return (new_str);
 }
