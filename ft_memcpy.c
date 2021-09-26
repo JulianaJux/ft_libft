@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/18 19:00:52 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/19 15:28:14 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 22:51:21 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	j;
+	size_t			j;
 	unsigned char	*d;
 	unsigned char	*s;
 
