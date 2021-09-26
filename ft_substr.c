@@ -6,7 +6,7 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:15:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/25 22:54:51 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 22:57:04 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 static ft_longlen(const char *s);
 {
-	size_t	i;
+	size_t	n;
 
-	i = 0;
+	n = 0;
 	while (*s != '\0')
 	{
-		i++;
+		n++;
 		s++;
 	}
-	return (i);
+	return (n);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
