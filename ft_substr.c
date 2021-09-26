@@ -6,13 +6,13 @@
 /*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 09:15:39 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/25 23:01:07 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/25 23:07:23 by julianaalen      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_longlen(const char *s);
+static 	 size_t	ft_longlen(const char *s);
 {
 	size_t	n;
 
