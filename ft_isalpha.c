@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/13 11:27:58 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 15:58:23 by julianaalen      ###   ########.fr       */
+/*   Created: 2021/09/27 15:34:18 by jde-alen          #+#    #+#             */
+/*   Updated: 2021/09/27 15:34:26 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
