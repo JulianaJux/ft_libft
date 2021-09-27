@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+         #
+#    By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/01 16:10:56 by julianaalen       #+#    #+#              #
-#    Updated: 2021/09/18 17:22:04 by julianaalen      ###   ########.fr        #
+#    Updated: 2021/09/27 16:52:13 by jde-alen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

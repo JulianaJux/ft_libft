@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 21:07:15 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/25 23:41:10 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 16:48:56 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:44:17 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 19:22:47 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 15:53:27 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

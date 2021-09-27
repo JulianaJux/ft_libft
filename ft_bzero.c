@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/18 18:42:26 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/13 10:54:20 by julianaalen      ###   ########.fr       */
+/*   Created: 2021/09/27 15:46:18 by jde-alen          #+#    #+#             */
+/*   Updated: 2021/09/27 15:46:32 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

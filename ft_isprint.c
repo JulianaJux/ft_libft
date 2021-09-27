@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:48:18 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 19:24:37 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 15:53:36 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

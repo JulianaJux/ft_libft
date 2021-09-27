@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/18 19:00:52 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/25 22:51:21 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 16:08:00 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

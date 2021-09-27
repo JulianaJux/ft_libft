@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/12 17:53:05 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 18:51:37 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 15:54:16 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

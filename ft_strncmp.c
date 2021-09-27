@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 17:31:53 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 18:16:19 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 16:49:15 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

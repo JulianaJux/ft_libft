@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 16:08:32 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 21:19:12 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 15:53:19 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

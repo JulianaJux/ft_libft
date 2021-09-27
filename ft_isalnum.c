@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/15 15:59:46 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/08/15 19:29:14 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 15:52:57 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

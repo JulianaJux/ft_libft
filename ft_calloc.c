@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/15 18:39:41 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/18 19:59:31 by julianaalen      ###   ########.fr       */
+/*   Created: 2021/09/27 15:52:37 by jde-alen          #+#    #+#             */
+/*   Updated: 2021/09/27 15:52:43 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

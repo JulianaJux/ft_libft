@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 13:47:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/06 14:06:39 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 16:20:33 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

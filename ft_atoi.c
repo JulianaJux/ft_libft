@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/31 11:41:02 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/25 15:57:35 by julianaalen      ###   ########.fr       */
+/*   Created: 2021/09/27 15:45:55 by jde-alen          #+#    #+#             */
+/*   Updated: 2021/09/27 15:46:09 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

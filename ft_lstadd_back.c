@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/12 17:53:00 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/12 18:49:57 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 15:54:02 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

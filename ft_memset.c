@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: julianaalencar <julianaalencar@student.    +#+  +:+       +#+        */
+/*   By: jde-alen <jde-alen@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/18 18:13:38 by julianaalen       #+#    #+#             */
-/*   Updated: 2021/09/25 22:52:39 by julianaalen      ###   ########.fr       */
+/*   Updated: 2021/09/27 16:18:30 by jde-alen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
