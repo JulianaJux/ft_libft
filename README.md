@@ -14,4 +14,5 @@
 O que é?
 
 Esse projeto tem como objetivo, a construção de uma biblioteca estática com as funções da libc, biblioteca padrão da linguagem C.
-Essa biblioteca possui funções de alocação e manipulação de memória
+Essa biblioteca possui funções de alocação e manipulação de memória, manipulação de strings, conversão de tipo de dados e listas encadeadas.
+
